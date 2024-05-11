@@ -49,23 +49,16 @@ def recognize_digits(digits):
         recognized_digits.append(text.strip())
     return recognized_digits
 
-# Load the image
 image = cv2.imread("3.jpg")
 
-# Preprocess the image
 thresh = preprocess_image(image)
 
-# Find contours
 contours = find_contours(thresh)
 
-# Filter contours
 filtered_contours = filter_contours(contours)
 
-# Extract digits
 digits = extract_digits(image, filtered_contours)
 
-# Recognize digits
 recognized_digits = recognize_digits(digits)
 
-# Print recognized digits
 print("Recognized digits:", recognized_digits)
