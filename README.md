@@ -1,0 +1,1 @@
+This is a Computer Vision project. This project is a where I used openCV, tesseract and other methods to perform Seven Segment Digit Recognition. Seven Segment digits are basically the number that appear on your electricity meters.
